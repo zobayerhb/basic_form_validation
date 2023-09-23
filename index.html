@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form Validation</title>
+    <!-- Font awesome CDN JS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container my-3">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-uppercase">Create an account</h2>
+            </div>
+            <div class="card-body">
+              <div class="msg"></div>
+
+              <form id="user_create_form" action="">
+                <div class="my-3">
+                  <label for="">Name</label>
+                  <input id="name" class="form-control" type="text" />
+                  <p class="name-req"></p>
+                </div>
+                <div class="my-3">
+                  <label for="">Email</label>
+                  <input id="email" class="form-control" type="text" />
+                  <p class="email-req"></p>
+                </div>
+                <div class="my-3">
+                  <label name="cell" for="">Cell</label>
+                  <input
+                    id="cell"
+                    name="cell"
+                    class="form-control"
+                    type="text"
+                  />
+                  <p class="cell-req"></p>
+                </div>
+                <div class="my-3">
+                  <label for="">Username</label>
+                  <input id="username" class="form-control" type="text" />
+                  <p class="username-req"></p>
+                </div>
+                <div class="my-3">
+                  <button class="btn btn-primary" type="submit">Create</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Local JS -->
+    <script src="./app/function.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
