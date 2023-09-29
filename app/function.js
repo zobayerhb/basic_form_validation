@@ -8,7 +8,7 @@ const showAlert = (msg, type = "danger") => {
 
 // EMAIL CHECK
 const emailCheck = (email) => {
-  let pattern = /^[a-z0-9\._]{1,}@[a-z0-9]{1,}\.[a-z]{1,4}$/;
+  let pattern = /^[a-z0-9\._]{1,}@[a-z0-9]{1,}\.[a-z]{2,5}$/;
   return pattern.test(email);
 };
 
